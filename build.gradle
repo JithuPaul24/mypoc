@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.polarbootshop'
 // Default version, can be overridden
-version = System.getProperty('version', '1.0.0')
+version = project.hasProperty('version') ? project.version : '1.0.0'
 
 java {
 	sourceCompatibility = '21'
