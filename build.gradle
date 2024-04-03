@@ -5,7 +5,8 @@ plugins {
 }
 
 group = 'com.polarbootshop'
-version = '1.0.0-spring-boot-SNAPSHOT'
+// Default version, can be overridden
+version = System.getProperty('version', '1.0.0')
 
 java {
 	sourceCompatibility = '21'
